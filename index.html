@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>FlipCard Register Table</title>
+    <link rel="shortcut icon" href="./img/78c4af118001599.608076cf95739-removebg-preview.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="card-registro card" id="card-registro">
+        <div class="alert faltantes">
+            <h3> <i class="fa-solid fa-circle-x"></i> Hay datos Faltantes</h3>
+        </div>
+        <div class="alert mismaid">
+            <h3><i class="fa-solid fa-circle-exclamation"></i> Id ya registrada</h3>
+        </div>
+        <div class="alert save">
+            <h3> <i class="fa-solid fa-circle-check"></i> Dato Guardado</h3>
+        </div>
+        <div class="card-title">
+            <h1>Ingresar Usuario</h1>
+        </div>
+        <div class="card-text">
+            <div class="imagen">
+                <center>
+                    <img src="img/78c4af118001599.608076cf95739-removebg-preview.png" alt="">
+                </center>
+            </div>
+            <div class="formulario">
+                <h2 style="font-weight: 400; color: #4b53e4;">Información</h2>
+                <div class="formulario-inputs">
+                    <div class="nombre-apellido">
+                        <input type="text" placeholder="Nombre" id="Nombre">
+                        <input type="text" placeholder="Apellido" id="Apellido">
+                    </div>
+                    <div class="id-mail">
+                        <input type="number" placeholder="Identificación" id="Id">
+                        <input type="email" placeholder="Email" id="Email">
+                    </div>
+                    <div class="direccion">
+                        <input type="text" id="Direccion" placeholder="Dirección">
+                    </div>
+                    <div class="mensaje">
+                        <textarea name="" id="Descripcion" rows="5" placeholder="Descripcion"></textarea>
+                    </div>
+                </div>
+                <div class="formulario-botones">
+                    <button id="Agregar" class="boton agregar">Agregar</button>
+                    <button id="Verlista" class="boton ver">VerLista</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card card-table" id="card-tabla">
+        <h1 style="margin-bottom: 2%; color: #4b53e4;">Tabla de Registros</h1>
+        <div class="tabla">
+            <table border=1 style="border-collapse: collapse; width: 100%;" class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Identificación</th>
+                        <th>email</th>
+                        <th>Dirección</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody id=CuerpoTabla>
+                </tbody>
+            </table>
+        </div>
+        <div class="volvera">
+            <button id="Volver" class="boton volver">Volver</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
